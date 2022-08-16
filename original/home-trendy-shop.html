@@ -8,31 +8,38 @@
   <meta name="format-detection" content="telephone=no" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="css/ico-7-stroke.css" rel="stylesheet" />
   <link href="css/ico-helper.css" rel="stylesheet" />
   <link href="css/magnific-popup.css" rel="stylesheet" />
   <link href="css/animsition.min.css" rel="stylesheet" />
   <link href="css/animate.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/fullwidth.css" rel="stylesheet" type="text/css" />
   <title>voila</title>
 </head>
 
-<body class="">
-  <header class="u-header u-header--transp-dark u-header--white-text">
+<body class=" animsition    bg-white ">
+  <!-- ///////////////////////////////////////// -->
+  <header class="u-header u-header--shop u-header--transp-light u-header--black-text">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
-          <div class="u-header__wrap">
-            <div class="u-header__logo float-right">
+          <div class="u-header__wrap u-header__wrap--shop-center">
+            <div class="u-header__logo float-left">
               <a href="index.html" class="table-cell">voila</a>
             </div>
-            <div class="u-header__nav-icon u-header__nav-icon--visible float-left">
+            <div class="u-header__nav-icon float-right">
               <a href="#" class="table-cell"><i></i></a>
             </div>
-            <div class="u-header__navigation u-header__navigation--hide float-left">
+            <div class="shop-form float-right">
+              <form class="shop-form__form" action="#">
+                <input class="shop-form__input" type="text" placeholder="Search">
+                <button class="shop-form__btn"><i class="pe-7s-search"></i></button>
+              </form>
+              <a href="" class="shop-form__icon pe-7s-cart"><i>7</i></a>
+            </div>
+            <div class="u-header__navigation u-header__navigation--shop u-header__navigation--shop-center">
               <nav>
                 <ul class="table-cell main-menu">
                   <li class="menu-item menu-item-has-children u-header__megamenu"><a href="#">Home</a>
@@ -228,69 +235,239 @@
       </div>
     </div>
   </header>
-  <!-- ///////////////////////////////////////// -->
-  <div class="flexslider wpc-hero-slider">
-    <ul class="slides">
-      <li>
-        <div class="heroSlideItem heroSlideItem-style2 wpc-bg-block">
-          <img src="img/bg23.jpg" alt="">
-          <div class="heroSlideInfo">
-            <div class="heroSlideInfoWrap">
-              <h4>improve your life with</h4>
-              <h1>crossfit <br> gym & fitness</h1>
-              <p>Proin at tincidunt felis. Aenean vel interdum libero, sed rhoncus libero. In at pulvinar massa. Nunc dignissim, mi et rhoncus.
-                <br> Phasellus vitae efficitur lorem. Fusce eu mauris efficitur, cursus felis sed, varius urna. </p>
-              <a href="about.html">look more</a>
+  <!-- ////////////////////////////////////////////// -->
+  <div class="bg2">
+    <div class="container-fluid no-padd-lg">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="filters" class=" filters-style-7 marg-lg-t105 ">
+            <span>Sort by:</span>
+            <button class="but " data-filter="*">All</button>
+            <button class="but activbut" data-filter=".pop">Popularity</button>
+            <button class="but" data-filter=".rating">Rating</button>
+            <button class="but" data-filter=".new">Newness</button>
+            <button class="but" data-filter=".lprice">Price (lower)</button>
+            <button class="but" data-filter=".hprice">Price (higher)</button>
+            <div class="wpc-row-size"><span>Show in a row:</span>
+              <a href="" class="activbut" data-row='nogutt-col3'>3</a>
+              <a href="" class="" data-row='nogutt-col4'>4</a>
+              <a href="" class="" data-row='nogutt-col5'>5</a>
+              <a href="" class="" data-row='nogutt-col6'>6</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="nogutt-col3">
+          <div class="izotope-container  izotope-container-js ">
+            <div class="grid-sizer"></div>
+            <div class="item item-lamp pop ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i137.jpg" alt="">
+              <div class="wpc-star-rate" data-score="4"></div>
+              <span class="lamp-name">panama table lamp </span>
+              <span class="lamp-price">$ 139</span>
+            </div>
+            <div class="item item-lamp rating ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i138.jpg" alt="">
+              <div class="wpc-star-rate" data-score="3"></div>
+              <span class="lamp-name">red mulberry  </span>
+              <span class="lamp-price">$ 159</span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i139.jpg" alt="">
+              <div class="wpc-star-rate" data-score="3"></div>
+              <span class="lamp-name">iris bunny lamp  </span>
+              <span class="lamp-price lamp-price-sale"> <span>$ 445</span> $ 339</span>
+            </div>
+            <div class="item item-lamp lprice">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i140.jpg" alt="">
+              <div class="wpc-star-rate" data-score="2"></div>
+              <span class="lamp-name">the meredit  </span>
+              <span class="lamp-price ">  $ 70</span>
+            </div>
+            <div class="item item-lamp hprice ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i141.jpg" alt="">
+              <div class="wpc-star-rate" data-score="5"></div>
+              <span class="lamp-name">blue lighter </span>
+              <span class="lamp-price"> $ 249</span>
+            </div>
+            <div class="item item-lamp pop">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i142.jpg" alt="">
+              <div class="wpc-star-rate" data-score="4"></div>
+              <span class="lamp-name">unique </span>
+              <span class="lamp-price"> $ 369</span>
+            </div>
+            <div class="item item-lamp rating ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i143.jpg" alt="">
+              <div class="wpc-star-rate" data-score="4"></div>
+              <span class="lamp-name">true&simple </span>
+              <span class="lamp-price"> $ 34 </span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i144.jpg" alt="">
+              <div class="wpc-star-rate" data-score="5"></div>
+              <span class="lamp-name">wilko atoe </span>
+              <span class="lamp-price lamp-price-sale"> <span> $ 339</span>$ 225</span>
+            </div>
+            <div class="item item-lamp lprice ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i145.jpg" alt="">
+              <div class="wpc-star-rate" data-score="5"></div>
+              <span class="lamp-name">bellacor </span>
+              <span class="lamp-price "> $ 499</span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i146.jpg" alt="">
+              <div class="wpc-star-rate" data-score="4"></div>
+              <span class="lamp-name">classic shape  </span>
+              <span class="lamp-price "> $ 119</span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i147.jpg" alt="">
+              <div class="wpc-star-rate" data-score="1"></div>
+              <span class="lamp-name">wayfair table lapm </span>
+              <span class="lamp-price ">$ 99</span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i148.jpg" alt="">
+              <div class="wpc-star-rate" data-score="4"></div>
+              <span class="lamp-name">bender </span>
+              <span class="lamp-price "> $ 269</span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i149.jpg" alt="">
+              <div class="wpc-star-rate" data-score="4"></div>
+              <span class="lamp-name">night shape </span>
+              <span class="lamp-price "> $ 89</span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i150.jpg" alt="">
+              <div class="wpc-star-rate" data-score="1"></div>
+              <span class="lamp-name">green lime  </span>
+              <span class="lamp-price ">$ 254</span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i151.jpg" alt="">
+              <div class="wpc-star-rate" data-score="3"></div>
+              <span class="lamp-name">beedside  </span>
+              <span class="lamp-price ">$ 39 </span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i152.jpg" alt="">
+              <div class="wpc-star-rate" data-score="4"></div>
+              <span class="lamp-name">flos tatou lamp   </span>
+              <span class="lamp-price ">$ 399 </span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i153.jpg" alt="">
+              <div class="wpc-star-rate" data-score="1"></div>
+              <span class="lamp-name">pure light    </span>
+              <span class="lamp-price ">$ 178 </span>
+            </div>
+            <div class="item item-lamp new ">
+              <div class="item-lamp-popup"><a href="">add to card</a></div>
+              <img src="img/i154.jpg" alt="">
+              <div class="wpc-star-rate" data-score="1"></div>
+              <span class="lamp-name">pure light    </span>
+              <span class="lamp-price ">$ 178 </span>
             </div>
           </div>
         </div>
-      </li>
-      <li>
-        <div class="heroSlideItem heroSlideItem-style2 wpc-bg-block">
-          <img src="img/bg27.jpg" alt="">
-          <div class="heroSlideInfo heroSlide2">
-            <div class="heroSlideInfoWrap">
-              <h1>looks good with us</h1>
-              <div class="wpc-abonenent">
-                <ul>
-                  <li> First month is free</li>
-                  <li> Personal trainers</li>
-                  <li> Wonderful atmosphere</li>
-                  <li> Motivating music</li>
-                </ul>
-                <div class="wpc-price">
-                  <h3><span>only </span> <sup>$</sup>59 <span>/ month</span></h3>
-                </div>
-              </div>
-              <p>Proin iaculis diam vel justo volutpat porttitor. Nam posuere efficitur sapien, nec venenatis neque euismod ac. Fusce varius tempor lacus ac accumsan. Mauris non bibendum lorem. Suspendisse tincidunt quis elit luctus sollicitudin. </p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="heroSlideItem heroSlideItem-style2 wpc-bg-block">
-          <img src="img/bg28.jpg" alt="">
-          <div class="heroSlideInfo heroSlide3">
-            <div class="heroSlideInfoWrap">
-              <h1>get fit immediately</h1>
-              <p>Nullam a suscipit urna, vitae rutrum ante. Aenean et nulla lacus. Quisque varius nibh non magna scelerisque vehicula. In et elementum orci. Curabitur auctor arcu ligula, a viverra sem scelerisque.</p>
-              <div class="wpc-map" data-lat="40.7143528" data-lng="-74.0059731" data-zoom="10" data-style="style-2" data-string="WPC string"></div>
-              <ul>
-                <li class="pe-7s-map-marker"><a href="">st. Shoplocation, 32</a></li>
-                <li class="pe-7s-call"><a href="">0 800 399856</a></li>
-                <li class="pe-7s-mail"><a href="">info@shopmail.com</a></li>
-                <li class="pe-7s-clock">Mon - Fri 08:30 - 22:00</li>
+      </div>
+    </div>
+  </div>
+  <!-- ////////////////////////////////////////////// -->
+  <footer class="u-footer">
+    <div class="u-footer__top">
+      <div class="container no-padd-lg">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 marg-sm-b60">
+            <div class="u-footer__item">
+              <h3 class="u-footer__title">about us</h3>
+              <ul class="u-footer-info marg-lg-b60">
+                <li>
+                  <h4 class="u-footer-info__title">Phone</h4>
+                  <a href="#" class="u-footer-info__desc">+9975236933</a>
+                </li>
+                <li>
+                  <h4 class="u-footer-info__title">Mail</h4>
+                  <a href="#" class="u-footer-info__desc">voila_support@info.com</a>
+                </li>
+                <li>
+                  <h4 class="u-footer-info__title">Address</h4>
+                  <a href="#" class="u-footer-info__desc">23 Perl Harbor,  New York, USA</a>
+                </li>
+              </ul>
+              <h3 class="u-footer__title">follow us</h3>
+              <ul class="u-footer-soc">
+                <li>
+                  <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-linkedin"></a>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-google-plus"></a>
+                </li>
               </ul>
             </div>
           </div>
+          <div class="col-md-4 col-sm-6 marg-sm-b60">
+            <div class="u-footer__item">
+              <h3 class="u-footer__title">if u fave a questions</h3>
+              <form class="u-footer-form">
+                <input class="u-footer-form__input" type="text" required placeholder="Your name">
+                <input class="u-footer-form__input" type="text" required placeholder="Your email address">
+                <textarea class="u-footer-form__textarea" name="taraeaext" cols="30" rows="10" required placeholder="Your message"></textarea>
+                <button class="u-footer-form__btn u-btn u-btn--small u-btn--grey u-btn--hover-grey">submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="u-footer__item">
+              <h3 class="u-footer__title">you can find us here</h3>
+              <div class="u-footer__map wpc-map" data-lat="40.7143528" data-lng="-74.0059731" data-marker="img/marker2.png" data-zoom="10" data-style="style-2" data-string="WPC string"></div>
+            </div>
+          </div>
         </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </div>
+    <div class="u-footer__bottom">
+      <a href="index.html" class="u-footer__main-link">Voila Ⓒ 2018 TrueThemes</a>
+    </div>
+  </footer>
+  <!-- ////////////////////////////////////////////// -->
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animsition.min.js"></script>
+  <script src="js/jquery.countTo.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.raty-fa.min.js"></script>
+  <script src="js/jquery.matchHeight.min.js"></script>
+  <script src="js/idangerous.swiper.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLa0X2YHRndjJmw1rFB82NhRbjYRU1_lU" type="text/javascript"></script>
+  <script src="js/scroll.js"></script>
   <script src="js/all.js"></script>
 </body>
 
